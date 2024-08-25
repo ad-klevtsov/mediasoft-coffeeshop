@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
@@ -359,4 +360,94 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
+}
+
+.feedback {
+  max-width: 1240px;
+  padding: 175px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.feedback__header {
+  max-width: 454px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.feedback__title {
+  text-align: center;
+}
+.feedback__rate {
+  text-align: center;
+}
+.feedback__card-container {
+  box-sizing: border-box;
+  position: relative;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 20px 60px 0px rgba(163, 168, 178, 0.1490196078);
+}
+.feedback__content {
+  padding: 0px 40px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.feedback__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+.feedback__text {
+  width: 387px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 1240px;
+  padding-inline: 40px;
+}
+
+/* ------- Стили карусели карточек -------  */
+.slider-wrapper {
+  position: relative;
+  padding-inline: 80px;
+}
+
+.button-arrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.button-arrow img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.button-arrow:hover {
+  box-shadow: 0px 0px 13px 10px #939396;
+}
+
+.button-arrow--prev {
+  left: 0;
+}
+
+.button-arrow--next {
+  right: 0;
 }
