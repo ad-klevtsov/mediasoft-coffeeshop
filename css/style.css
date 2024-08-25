@@ -65,12 +65,17 @@ img {
   vertical-align: top;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 body {
   font-family: Jost;
+  color: #1B1B1D;
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
 }
@@ -107,10 +112,10 @@ body {
 }
 .menu__item {
   align-self: center;
+  text-align: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 21.68px;
-  color: #1B1B1D;
   transition-duration: 0.3s;
 }
 .menu__item:hover {
@@ -127,10 +132,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 0.3s;
 }
-.menu__button:hover {
-  box-shadow: 0px 0px 13px 10px #939396;
+.menu__button_black {
+  border-radius: 63px;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
 }
 
 .basket-button {
@@ -139,20 +147,172 @@ body {
   flex-shrink: 0;
   border-radius: 50%;
   background: #FFFFFF;
+  transition-duration: 0.3s;
 }
 .basket-button img {
   max-width: 100%;
   max-height: 100%;
 }
+.basket-button:hover {
+  box-shadow: 0px 0px 13px 10px #939396;
+}
 
-.voucher-button {
-  border-radius: 63px;
-  padding: 15px 30px;
+.black-button {
   gap: 10px;
   text-transform: uppercase;
   background: #1B1B1D;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 26px;
   color: #FFFFFF;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+.black-button:hover {
+  box-shadow: 0px 0px 13px 10px #939396;
+}
+
+.main-body {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 103px 100px;
+}
+.main-body__left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.main-body__title {
+  font-weight: 800;
+  font-size: 124px;
+  line-height: 140px;
+  color: #1B1B1D;
+}
+.main-body__subtitle {
+  max-width: 530px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34.68px;
+  color: #64646A;
+}
+.main-body__buttons {
+  display: flex;
+  gap: 30px;
+}
+.main-body__button {
+  align-self: center;
+}
+.main-body__button_underlined {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26.01px;
+  border-bottom: solid 1px #1B1B1D;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+.main-body__button_underlined:hover {
+  box-shadow: 0 -37px 0px 0 #5b5b5e inset;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+.main-body__button_black {
+  padding: 20px 40px;
+  border-radius: 126px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  transition-duration: 0.3s;
+}
+.main-body__right {
+  width: 680.25px;
+  height: 712px;
+}
+.main-body__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.explore {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 103px 100px;
+  gap: 100px;
+}
+.explore__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.explore__title {
+  text-align: center;
+}
+.explore__subtitle {
+  max-width: 605px;
+  text-align: center;
+}
+.explore__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.explore__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 394px;
+  height: 540px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0px 30px 60px 0px rgba(163, 168, 178, 0.1490196078);
+}
+.explore__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.explore__column-title {
+  max-width: 214px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+.explore__column-subtitle {
+  max-width: 316px;
+}
+.explore__image {
+  max-width: 150px;
+  max-height: 150px;
+}
+.explore__image img {
+  width: 100%;
+  height: 100%;
+}
+.explore__button {
+  width: 165px;
+  border-radius: 126px;
+  padding: 15px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34.68px;
+  color: #64646A;
 }
